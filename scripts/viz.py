@@ -121,7 +121,7 @@ class Visualizer(QMainWindow):
         self.window.show()
 
     def checkFileForUpdates(self):
-        if(os.path.isfile("saved_photo.txt")):
+        if(os.path.isfile("/tmp/saved_photo.txt")):
             self.visualizeWindow(False)
                               
     def createParamBoxes(self):

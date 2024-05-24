@@ -1,0 +1,5 @@
+Xlib
+diffusers
+transformers
+accelerate
+pyqt5

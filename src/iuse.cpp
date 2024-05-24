@@ -6377,6 +6377,10 @@ static item::extended_photo_def photo_def_for_camera_point( const tripoint &aim_
 
     photo.description = photo_text;
 
+    std::ofstream save_photo_file( "/var/saved_photo.txt" );                                                                            
+    save_photo_file << photo_text;                                                                                                      
+    save_photo_file.close();                                                                                                            
+    
     return photo;
 }
 
